@@ -1,0 +1,352 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+/*FOR FONTSSSS
+
+font-family: "Comfortaa", sans-serif;
+  font-family: "Playfair Display", serif;
+*******************/
+body {
+  font-family: "Comfortaa", sans-serif;
+    color: #db3e0f;
+    background-color: #8bddb8;
+}
+
+/*HEADER
+****************/
+
+.header {
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+.header-logo {
+  color: #000000;
+  text-decoration: none !important;
+  transition: .8s opacity;
+  font-size: 25px;
+}
+
+.header-logo:hover {
+opacity: 0.8;
+color: #777474;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
+
+.nav-link {
+  margin: 0 40px;
+  text-decoration: none !important;
+  color:#8bddb8 ;
+  position: relative;
+  z-index: 3;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  color: #777474;
+  }
+
+  /*MAIN
+  **********/
+
+  .main-inner {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .main-part1 {
+    width: 50%;
+  }
+
+  .main-me {
+    margin-bottom: 18px;
+  }
+
+  .main-text {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 32px;
+    color: #000;
+  }
+
+  .main-about {
+    color: #777474;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+
+  .main-btn {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px #db3e0f solid;
+    color: #8bddb8;
+    background-color: #db3e0f;
+    border-radius: 15px;
+    margin-right: 5px;
+    transition: transform 0.8s ease;
+  }
+
+  .main-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .main-part2 {
+    position: relative;
+    margin-bottom: 144px;
+  }
+
+  .main-img1{
+    display: block;
+    
+    position: absolute;
+    left: 750px;
+    bottom: 0px;
+    z-index: 1;
+    overflow: hidden;
+  
+  }
+
+  /*ALBUUUM
+  ***************/
+
+  .best-albums {
+    margin-bottom: 144px;
+  }
+
+  .best-together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  .best-alb-text {
+
+   
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: bolder;
+    flex-direction: column;
+
+    margin-bottom: 5px;
+    color: #000;
+  }
+
+  .best-alb-line {
+    
+   
+    width: 100px;
+    height: 4px;
+    background-color: #db3e0f;
+    
+  }
+
+  .albums-inner {
+    
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .album-block{
+    display: flex;
+    flex-direction: row;
+    width: 1150px;
+    height: 496px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    overflow: hidden;
+  }
+
+  .album-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 75%;
+    
+    
+  }
+
+  .album-name {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #000;
+    margin-bottom: 35px;
+  }
+
+  .album-about {
+    color: #777474;
+    width: 80%;
+    margin-bottom: 35px;
+  }
+
+  .album-listen {
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: 1px #000 solid;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    opacity: 0.7; /* чтобы был эффект плавного появления */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    
+  }
+
+  .album-listen:hover {
+    opacity: 1;
+    background-color: #db3e0f;
+  }
+
+  /*SOCIAL MEDDDIA
+  ************/
+
+  .social-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 32px;
+    
+  }
+
+
+  
+  .social-logo {
+    transition: transform 0.8s ease;
+  }
+  .social-logo:hover {
+    transform: scale(1.1);
+  }
+
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #777474;
+    margin-bottom: 80px;
+  }
+
+  
+
+
+
